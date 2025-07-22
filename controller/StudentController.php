@@ -1,4 +1,4 @@
-<?php require_once '//model/StudentModel.php'; 
+<?php require_once './model/StudentModel.php'; 
 
 class StudentController {
     private $model;
@@ -9,7 +9,7 @@ class StudentController {
 
     public function showProfile($username) {
         $profile = $this->model->getProfile($username);
-        include '//view/profileView.php';
+        include './view/profileView.php';
     }
 
     public function handleLogin($username, $password) {

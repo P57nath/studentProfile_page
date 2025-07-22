@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once '//controller/StudentController.php';
+require_once './controller/StudentController.php';
 
 $controller = new StudentController();
 
@@ -11,6 +11,6 @@ if (isset($_POST['login'])) {
 } elseif (isset($_SESSION['username'])) {
     $controller->showProfile($_SESSION['username']);
 } else {
-    include '//view/loginForm.php';
+    include './view/loginForm.php';
 }
 ?>
