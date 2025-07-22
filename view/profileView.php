@@ -3,7 +3,7 @@
 <div class="profile-container">
     <div class="profile-card">
         <div class="profile-image">
-            <img src="./assets/images/profile-placeholder.png" alt="Profile Picture">
+            <img src="../assets/images/profile-placeholder.png" alt="Profile Picture">
         </div>
         <div class="profile-info">
             <h2><?php echo htmlspecialchars($profile['name']); ?></h2>
