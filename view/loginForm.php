@@ -3,7 +3,14 @@
 <div class="login-container">
     <form action="index.php" method="POST" class="login-form">
         <h2>Student Login</h2>
-        
+
+        <?php
+        if (isset($_SESSION['success_msg'])) {
+            echo '<p class="success-msg">' . htmlspecialchars($_SESSION['success_msg']) . '</p>';
+            unset($_SESSION['success_msg']);
+        }
+        ?>
+
         <?php if (isset($error)) : ?>
             <p class="error-msg"><?php echo htmlspecialchars($error); ?></p>
         <?php endif; ?>

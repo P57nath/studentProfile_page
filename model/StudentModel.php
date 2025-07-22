@@ -32,6 +32,7 @@ class StudentModel {
         if ($student) {
             if ($student['password'] === $password) {
                 $_SESSION['username'] = $username;
+                $_SESSION['success_msg'] = "Login Successful!";
                 header("Location: index.php");
                 exit;
             }
